@@ -1,0 +1,32 @@
+{
+  "name": "devcontainer",
+  "image": "registry.cn-shanghai.aliyuncs.com/amt/dev-node-java:20240315",
+  "runArgs": [
+    "--cap-add=NET_ADMIN",
+    "--device=/dev/net/tun"
+  ],
+  "containerEnv": {
+    "TZ": "Asia/Shanghai"
+  },
+  "mounts": [
+    {
+      "source": "/root/ctroot",
+      "target": "/root",
+      "type": "bind"
+    }
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "adam-bender.commit-message-editor",
+        "serhioromano.vscode-gitflow",
+        "vscjava.vscode-java-pack",
+        "vue.volar"
+      ]
+    }
+  },
+  "workspaceMount": "source=/workspaces,target=/workspaces,type=bind,consistency=cached",
+  "workspaceFolder": "/workspaces"
+}
