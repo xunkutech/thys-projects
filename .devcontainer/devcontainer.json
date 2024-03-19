@@ -28,5 +28,5 @@
     }
   },
   "workspaceMount": "source=/workspaces,target=/workspaces,type=bind,consistency=cached",
-  "workspaceFolder": "/workspaces"
+  "workspaceFolder": "/workspaces/starter"
 }
