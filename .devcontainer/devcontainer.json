@@ -20,17 +20,5 @@
       "type": "bind"
     }
   ],
-  "customizations": {
-    "vscode": {
-      "settings": {},
-      "extensions": [
-        "ms-kubernetes-tools.vscode-kubernetes-tools",
-        "adam-bender.commit-message-editor",
-        "serhioromano.vscode-gitflow",
-        "vscjava.vscode-java-pack",
-        "vue.volar"
-      ]
-    }
-  },
-  "workspaceFolder": "/workspaces/starter"
+  "workspaceFolder": "/workspaces/.starter"
 }
