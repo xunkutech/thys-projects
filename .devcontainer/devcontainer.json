@@ -10,15 +10,16 @@
   },
   "mounts": [
     {
-      "source": "/root/ctroot",
+      "source": "/home/devcontainer",
       "target": "/root",
       "type": "bind"
     },
     {
-      "source": "/workspaces",
-      "target": "/workspaces",
+      "source": "/data",
+      "target": "/IdeaProjects",
       "type": "bind"
     }
   ],
-  "workspaceFolder": "/workspaces/.starter"
+  "postAttachCommand": "mount --bind /IdeaProjects /starter",
+  "workspaceFolder": "/starter"
 }
